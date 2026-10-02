@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Cinzel:wght@400..900&family=Manrope:wght@200..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+
+}
+html , body{
+ 
+      background-image: url(https://res.cloudinary.com/dzvavsp8y/image/upload/v1790830253/bullseye-gradient_ad7cp8.svg);
+}
+canvas {
+    width: 100%;
+    height: 100vh;
+    /* display: block; */
+}
+
+.show {
+    width: 100%;
+    position: relative;
+    background-color: black;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding: 20px 0px;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aliceblue; */
+}
+
+nav ul {
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    font-size: 18px;
+    color: whitesmoke;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    transition: translate 2s ease-in;
+}
+
+nav button {
+    padding: 10px;
+    background-color: #DC2626;
+    border: none;
+    width: 130px;
+    color: whitesmoke;
+    font-size: 15px;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    border-radius: 10px;
+}
+
+
+nav ul li::after {
+    content: "";
+    transition: all 2s ease;
+
+}
+
+nav ul li:hover {
+    width: auto;
+    border-bottom: 2px solid #e97509;
+    cursor: pointer;
+
+    /* background-color: red; */
+}
+
+.left_link {
+    width: 40%;
+}
+
+.right_link {
+    width: 40%;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: black;background-image: url(https://res.cloudinary.com/dzvavsp8y/image/upload/v1790830253/bullseye-gradient_ad7cp8.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.model {
+    position: fixed;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 1;
+    pointer-events: none;
+}
+
+.overlap_content {
+    width: 57%;
+    height: auto;
+    /* background-color: antiquewhite; */
+    position: absolute;
+    top: 35%;
+    z-index: 3;
+    text-align: center;
+    left: 20%;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.overlap_content h1 {
+    color: wheat;
+    line-height: 90px;
+}
+
+span {
+    color: #e97509;
+}
+
+.overlap_content h2 {
+    font-size: 15px;
+    width: 90%;
+    text-align: center;
+    margin: 10px auto;
+    /* background-color: #DC2626; */
+    padding: 5px;
+    color: white;
+    font-weight: 300;
+    font-family: "Manrope", sans-serif;
+}
+
+
+
+section {
+    height: auto;
+    display: flex;
+    color: white;
+    /* background-color: black; */
+  background-image: url(https://res.cloudinary.com/dzvavsp8y/image/upload/v1790830253/bullseye-gradient_ad7cp8.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    border-bottom: 0.1px solid rgb(218, 87, 39);
+    /* align-items: center; */
+    /* padding: 2vw; */
+}
+
+.second {
+    display: flex;
+    /* justify-content: right; */
+    height: auto;
+
+}
+
+.about {
+    width: 100%;
+    /* border: 2px solid orangered; */
+    height: auto;
+    padding: 20px 0px;
+
+}
+
+.headline {
+    text-align: center;
+    margin-bottom: 5rem;
+    font-family: "Cinzel Decorative", serif;
+}
+
+.head1 {
+    text-align: center;
+    /* margin: 5rem 0px; */
+    font-size: 13px;
+    color: #DC2626;
+    font-family: "Cinzel Decorative", serif;
+    margin-top: 6rem;
+}
+
+.container {
+    width: 100%;
+    /* background-color: #DC2626; */
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 10px; */
+}
+
+.first {
+    width: 260px;
+    margin: 0 auto;
+    border: 1px solid rgba(255, 69, 69, 0.25);
+    height: auto;
+    border-radius: 20px;
+    flex-shrink: 0;
+    padding: 30px;
+}
+
+.first p {
+    width: 90%;
+    display: flex;
+    font-size: 13px;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.content h1 {
+    font-size: 1.3rem;
+    padding: 5px;
+    font-family: "Cinzel Decorative", serif;
+}
+
+.content p {
+    font-size: 13px;
+    padding: 5px;
+}
+
+.loader {
+    margin: 10px 4px;
+    width: 85%;
+    padding: 5px;
+    border-radius: 10px;
+    background: linear-gradient(to right, red, yellow);
+}
+
+.details {
+    width: 100%;
+    height: auto;
+    /* border: 0.1px solid rgb(173, 31, 31); */
+    margin: 10rem auto;
+    border-radius: 20px;
+}
+
+.ele {
+    /* display: flex; */
+    width: 77%;
+    font-family: "Manrope", sans-serif;
+    /* background-color: #e97509; */
+}
+
+.ele p {
+    font-size: 14px;
+    color: red;
+}
+
+.ele h1 {
+    font-family: "Cinzel Decorative", serif;
+}
+
+.line2 {
+    width: 90%;
+    padding: 20px 0px;
+    border-bottom: 0.1px solid red;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    margin: 30px auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.line {
+    width: 100%;
+    /* border-bottom: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 20px; */
+    flex-shrink: 0;
+    margin: 30px auto;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+
+.box {
+    width: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 0.1px solid rgb(179, 38, 38); */
+    height: 70px;
+    flex-shrink: 1;
+    gap: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.text {
+    width: 80%;
+    height: auto;
+    /* border: 2px solid rgb(150, 18, 18); */
+
+}
+
+.text h1 {
+    font-size: 20px;
+    font-family: "Manrope", sans-serif;
+}
+
+.text h2 {
+    font-size: 10px;
+    font-family: "Manrope", sans-serif;
+}
+
+.hunter {
+    width: 90%;
+    margin: 4rem auto;
+    border: 0.1px solid rgba(151, 10, 10, 0.651);
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    /* padding: 20px; */
+    height: auto;
+}
+
+.left1 {
+    width: 60%;
+    border: 2px solid rgb(36, 16, 16);
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
+.left1 p {
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    padding: 10px 5px;
+    border-radius: 10px;
+
+    /* padding: 10px 0px ; */
+}
+
+.top_sec {
+    /* border: 2px solid rgb(211, 25, 25); */
+    width: 40%;
+
+    background-color: #DC2626;
+
+}
+
+.counter {
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 0px;
+
+}
+
+.timer {
+    width: 100px;
+    padding: 20px;
+    border: 0.1px solid rgb(241, 60, 60);
+    color: white;
+    flex-shrink: 1;
+    border-radius: 10px;
+    font-size: 19px;
+    font-weight: 800;
+
+}
+
+.min {
+    color: rgb(209, 135, 23);
+    font-size: 21px;
+}
+
+.sec {
+    color: red;
+    font-size: 21px;
+}
+
+.left1 h1 {
+    font-size: 4.5rem;
+    color: whitesmoke;
+    line-height: 80px;
+    font-family: "Cinzel Decorative", serif;
+    padding: 20px 0px;
+}
+
+.left1 h2 {
+    font-size: 18px;
+    /* padding: 10px 0px ; */
+    font-weight: 100;
+}
+
+.right1 {
+    width: 40%;
+    height: auto;
+    /* border: 2px solid white; */
+}
+
+.rate {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    /* background-color: aqua; */
+    align-items: center;
+    gap: 70px;
+    padding: 10px 0px;
+
+}
+
+.rate2 p {
+    font-size: 14px;
+}
+
+.rate2 p:nth-child(2) {
+    color: rgb(216, 40, 40);
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.boxx {
+    padding: 10px;
+    /* background-color:   blue; */
+    text-align: center;
+
+}
+
+.drop {
+    display: flex;
+    border: 0.1px solid red;
+    /* width: 60%; */
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.drop h1 {
+    font-size: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+}
+
+.boxx h2 {
+    font-size: 15px;
+}
+
+.boxx h1 {
+
+    padding: 20px;
+    font-size: 15px;
+}
+
+.btn {
+    padding: 20px 0px;
+    width: 100%;
+    margin: 10px auto;
+    border-radius: 10px;
+    border: none;
+    font-size: 23px;
+    background: linear-gradient(to right, red, rgb(202, 202, 4));
+    text-transform: uppercase;
+    font-family: "Cinzel", serif;
+    color: whitesmoke;
+    font-weight: 700;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    /* background-color: #e97509; */background-image: url(https://res.cloudinary.com/dzvavsp8y/image/upload/v1790830253/bullseye-gradient_ad7cp8.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.foot {
+    width: 90%;
+    /* background-color: aliceblue; */
+    margin: 0px auto;
+    border-bottom: 0.1px solid red;
+    display: grid;
+    padding: 20px 0px;
+    grid-template-columns: repeat(2, 1fr)200px;
+    color: white;
+}
+.red{
+    color: rgb(216, 14, 14);
+}
+.col1 ul li {
+    padding: 5px;
+    /* color: white; */
+    font-family: "Cinzel", serif;
+}
+
+.copyright {
+    width: 90%;
+    padding: 10px;
+    /* background-color: aqua; */
+    display: flex;
+    margin: 0 auto;
+    color: white;
+    justify-content: space-between;
+    font-family: "Cinzel", serif;
+}
+
+.copyright ol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.dot{
+    color: red;
+}
+.dot1{
+    color: rgb(206, 193, 15);
+}

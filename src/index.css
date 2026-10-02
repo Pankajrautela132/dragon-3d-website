@@ -1,0 +1,117 @@
+import React, { useEffect, useLayoutEffect, useRef } from "react";
+import { useAnimations, useGLTF } from "@react-three/drei";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import * as THREE from "three";
+
+gsap.registerPlugin(ScrollTrigger);
+
+export default function World() {
+
+    const { scene , animations  } = useGLTF("/red_dragon.glb");
+    const {actions} = useAnimations(animations);
+    const modelRef = useRef();
+    console.log(actions )
+    useEffect(()=>{
+actions['RedDragon_Armature|aura'].reset().fadeIn(.5).play()
+
+    },[])
+    useLayoutEffect(() => {
+        
+        
+        const model = modelRef.current;
+
+        const ctx = gsap.context(() => {
+
+            const tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".show",
+                    start: "top top",
+                    end: "bottom bottom",
+                    scrub: 2,
+
+                    // markers: true
+                }
+            });
+
+            
+
+                // =========================
+                // SECTION 2
+                // =========================
+
+                tl.to(model.position, {
+                    x: 0,
+                    y: 11,
+                    z: 9
+                })
+
+                tl.to(model.rotation, {
+
+                    x: THREE.MathUtils.degToRad(0),
+                    y: THREE.MathUtils.degToRad(8),
+                    // z:THREE.MathUtils.degToRad(-10)
+                    // Spin 360 degrees
+
+                }, "<")
+
+
+            // =========================
+            // SECTION 3
+            // =========================
+
+            tl.to(model.position, {
+                x: 0,
+                y: 0,
+                z: 0
+            })
+
+            tl.to(model.rotation, {
+                x:THREE.MathUtils.degToRad(-10) ,
+                y: THREE.MathUtils.degToRad(220),
+                z: THREE.MathUtils.degToRad(0)
+            }, "<");
+           
+        //    4
+           
+            tl.to(model.position, {
+                x: -0.48,
+                y: -0.21,
+                z: -1.31
+            })
+
+            tl.to(model.rotation, {
+                x:THREE.MathUtils.degToRad(-16) ,
+                y: THREE.MathUtils.degToRad(0),
+                z: THREE.MathUtils.degToRad(0)
+            }, "<");
+
+
+
+
+
+
+
+        });
+
+        return () => ctx.revert();
+
+    }, []);
+
+    return (
+        <primitive
+            ref={modelRef}
+            object={scene}
+
+            scale={16}
+
+            position={[0, 0, 0]}
+
+            rotation={[
+                0,
+                THREE.MathUtils.degToRad(45),
+                0
+            ]}
+        />
+    );
+}
