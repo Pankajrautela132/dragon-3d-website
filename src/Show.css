@@ -537,7 +537,7 @@ footer {
     color: rgb(206, 193, 15);
 }
 
-@media (max-width: 767px) {
+@media  (max-width: 767px) {
     /* Mobile styles */
 
     nav {
@@ -560,10 +560,12 @@ footer {
 
     .left_link {
         width: 50%;
+          font-size: 10px;
         /* background-color: aqua; */
     }
 
     .left_link ul {
+          font-size: 10px;
         gap: 20px;
     }
 
@@ -706,12 +708,33 @@ margin-bottom: 10px;
 .counter{
     gap: 10px;
 }
+.second{
+    height: auto;
+    padding: 0;
+}
+.about{
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+.head1{
+    margin: 20px auto;
+}
+.headline{
+    margin: 20px auto;
+}
+.details{
+    height: auto;
+    padding: 0;
+    margin: 10px auto;
+}
 
 }
 
 
 
-@media (max-width: 360px) {
+@media (max-width: 446px) {
+
     .overlap_content h1{
         font-size: 40px;
         line-height: 1;
@@ -723,7 +746,7 @@ margin-bottom: 10px;
         top: 20%;
     }
     .hero{
-        height: 100vh;
+        height: 80vh;
     }
     nav .left_link li:nth-child(1){
     display: none;
@@ -733,5 +756,17 @@ margin-bottom: 10px;
     display: none;
 
     }
-
+    .overlap_content{
+        top: 30%;
+        height: auto;
+        width: 80%;
+        /* background-color: aqua; */
+        left: 40px;
+    }
+    .overlap_content h1{
+        font-size: 50px;
+    }
+.box h1{
+    font-size: 20px;
+}
 }
