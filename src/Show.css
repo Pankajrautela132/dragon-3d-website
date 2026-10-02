@@ -8,10 +8,7 @@
     list-style-type: none;
 
 }
-html , body{
- 
-      background-image: url(https://res.cloudinary.com/dzvavsp8y/image/upload/v1790830253/bullseye-gradient_ad7cp8.svg);
-}
+
 canvas {
     width: 100%;
     height: 100vh;
@@ -153,11 +150,11 @@ section {
     display: flex;
     color: white;
     /* background-color: black; */
-  /* background-image: url(https://res.cloudinary.com/dzvavsp8y/image/upload/v1790830253/bullseye-gradient_ad7cp8.svg); */
+    /* background-image: url(https://res.cloudinary.com/dzvavsp8y/image/upload/v1790830253/bullseye-gradient_ad7cp8.svg); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 100vw;
+    width: 100%;
     border-bottom: 0.1px solid rgb(218, 87, 39);
     /* align-items: center; */
     /* padding: 2vw; */
@@ -503,9 +500,11 @@ footer {
     grid-template-columns: repeat(2, 1fr)200px;
     color: white;
 }
-.red{
+
+.red {
     color: rgb(216, 14, 14);
 }
+
 .col1 ul li {
     padding: 5px;
     /* color: white; */
@@ -529,9 +528,210 @@ footer {
     align-items: center;
     gap: 20px;
 }
-.dot{
+
+.dot {
     color: red;
 }
-.dot1{
+
+.dot1 {
     color: rgb(206, 193, 15);
+}
+
+@media (max-width: 767px) {
+    /* Mobile styles */
+
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+
+    nav li {
+        font-size: 10px;
+    }
+
+    .left_link {
+        width: 50%;
+        /* background-color: aqua; */
+    }
+
+    .left_link ul {
+        gap: 20px;
+    }
+
+    .right_link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 50%;
+        /* background-color: rgb(20, 0, 37); */
+    }
+
+    .right_link ul {
+        gap: 20px;
+    }
+
+    .overlap_content {
+        height: auto;
+        padding: 20px 0px;
+    }
+
+    .overlap_content h1 {
+        font-size: 4rem;
+    }
+
+    .overlap_content h2 {
+        padding: 20x 0px;
+
+       
+    }
+    .overlap_content{
+        top: 10%;
+    }
+     .hero {
+            height: 100vh;
+            width: 100%;
+            padding: 20px 0px;
+        }
+        .about h1{
+            font-size: 25px;
+        }
+
+        .first{
+            margin-bottom: 14px;
+        }
+
+.line2 p{
+    display: none;
+}
+
+.ele{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    align-items: center;
+    /* background-color: rgba(4, 85, 85, 0.301); */
+}
+.ele h1{
+    font-size: 30px;
+    width: 100%;
+}
+.box{
+    padding: 10px;
+    gap: 20px;
+}
+.line{
+    gap: 20px;
+}
+
+.hunter{
+    display: flex;
+    flex-wrap: wrap;
+}
+.left1{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.top_sec{
+    text-align: center;
+    
+}
+.rate2{
+    width: 100%;
+    padding: 10px 0px;
+}
+.right1{
+    width: 100%;
+}
+.boxx{
+    width: 100%;
+}
+.drop{
+    width: 80%;
+}
+.drop img{
+    width: 50px;
+}
+.drop h1{
+font-size: 10px;
+}
+.btn{
+    width: 80%;
+    font-size: 15px;
+}
+.timer{
+    padding: 10px;
+}
+
+.foot{
+     display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.col1 li{
+    font-size: 12px;
+}
+.col1 h1{
+    font-size: 18px;
+}
+.copyright{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.copyright p{
+margin-bottom: 10px;
+}
+.top_sec{
+    font-size: 12px;
+    width: 90%;
+}
+.counter{
+    gap: 10px;
+}
+
+}
+
+
+
+@media (max-width: 360px) {
+    .overlap_content h1{
+        font-size: 40px;
+        line-height: 1;
+
+    }
+    .overlap_content{
+        width: 80%;
+        left: 40px;
+        top: 20%;
+    }
+    .hero{
+        height: 100vh;
+    }
+    nav .left_link li:nth-child(1){
+    display: none;
+
+    }
+    nav .right_link li:nth-child(1){
+    display: none;
+
+    }
+
 }
