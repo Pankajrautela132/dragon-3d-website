@@ -93,7 +93,8 @@ nav ul li:hover {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background: black;background-image: url(https://res.cloudinary.com/dzvavsp8y/image/upload/v1790830253/bullseye-gradient_ad7cp8.svg);
+    background: black;
+    /* background-image: url(https://res.cloudinary.com/dzvavsp8y/image/upload/v1790830253/bullseye-gradient_ad7cp8.svg); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -152,7 +153,7 @@ section {
     display: flex;
     color: white;
     /* background-color: black; */
-  background-image: url(https://res.cloudinary.com/dzvavsp8y/image/upload/v1790830253/bullseye-gradient_ad7cp8.svg);
+  /* background-image: url(https://res.cloudinary.com/dzvavsp8y/image/upload/v1790830253/bullseye-gradient_ad7cp8.svg); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -292,7 +293,7 @@ section {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    /* border: 0.1px solid rgb(179, 38, 38); */
+    border: 0.1px solid rgb(156, 16, 16);
     height: 70px;
     flex-shrink: 1;
     gap: 10px;
@@ -320,10 +321,11 @@ section {
 .hunter {
     width: 90%;
     margin: 4rem auto;
-    border: 0.1px solid rgba(151, 10, 10, 0.651);
+    /* border: 0.1px solid rgba(151, 10, 10, 0.651); */
     display: flex;
     justify-content: space-evenly;
     border-radius: 10px;
+    gap: 30px;
     /* padding: 20px; */
     height: auto;
 }
@@ -404,7 +406,8 @@ section {
 .right1 {
     width: 40%;
     height: auto;
-    /* border: 2px solid white; */
+    border: 2px solid rgb(36, 16, 16);
+    border-radius: 10px;
 }
 
 .rate {
@@ -483,10 +486,11 @@ section {
 footer {
     width: 100%;
     height: auto;
-    /* background-color: #e97509; */background-image: url(https://res.cloudinary.com/dzvavsp8y/image/upload/v1790830253/bullseye-gradient_ad7cp8.svg);
+    /* background-color: #e97509;background-image: url(https://res.cloudinary.com/dzvavsp8y/image/upload/v1790830253/bullseye-gradient_ad7cp8.svg); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    padding: 40px 0px;
 }
 
 .foot {
