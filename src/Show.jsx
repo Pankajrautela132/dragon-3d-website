@@ -57,7 +57,7 @@ export default function Show() {
   return (
     <main className="show">
       
-      {/* <div className="model">
+      <div className="model">
         <Canvas
           camera={{
             position: [1, 30, 1],
@@ -73,7 +73,7 @@ export default function Show() {
 
           <World />
         </Canvas>
-      </div> */}
+      </div>
 
 
 
