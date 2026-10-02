@@ -17,7 +17,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function World() {
 
-    const { scene, animations } = useGLTF("/red_dragon.glb");
+    // const { scene, animations } = useGLTF("/red_dragon.glb");
+    const { scene, animations } = useGLTF(`${import.meta.env.BASE_URL}red_dragon.glb`);
 
     const { actions } = useAnimations(
         animations,
